@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Bootstrap Navbar Example</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="hero">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid navHolder">
+          <!-- Logo on the left side -->
+          <div class="navbar-brand">
+            <a href="#">
+              <img src="./assets/Riviva Icon.png" alt="Logo" class="logo" />
+            </a>
+          </div>
+          <!-- Navbar items in the center -->
+          <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item"><a class="nav-link" href="#">HOME</a></li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">WHO WE ARE</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">WHAT WE DO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">MEDIA CENTER</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">LEAD WITH US</a>
+              </li>
+            </ul>
+          </div>
+          <!-- Search icon, dropdown menu, and button on the right side -->
+          <div class="d-flex align-items-center">
+            <div
+              id="search-icon"
+              class="search-icon mx-2"
+              data-toggle="modal"
+              data-target="#searchModal"
+            >
+              <i class="fas fa-search"></i>
+            </div>
+            <div class="dropdown mx-2">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="languageDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                EN
+              </a>
+              <div class="dropdown-menu" aria-labelledby="languageDropdown">
+                <a class="dropdown-item" href="#">EN</a>
+              </div>
+            </div>
+            <button class="btn invest-btn">Invest Now</button>
+            <!-- Sidebar toggle button visible only on small and medium devices -->
+            <div class="sidebar-btn mx-2 d-lg-none" onclick="toggleSidebar()">
+              <i class="fas fa-bars"></i>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- left Scroll Start -->
+      <div class="leftScrol">
+        <img src="/assets/Left scroll action.png" alt="" class="leftScrolImg" />
+        <div class="leftScrolContent">
+          <p>Who We are</p>
+          <p>Our Roots</p>
+          <p>Vision and Mission</p>
+          <p>Values</p>
+          <p>Saudi Vision 2030</p>
+          <p>Goals</p>
+          <p>Board of Managers</p>
+          <p>IWMC</p>
+        </div>
+      </div>
+      <!-- left Scroll Finish -->
+
+      <!-- heading Title start -->
+      <div class="bigTitleHero">
+        <h1 class="head1">REVIVING</h1>
+        <h1 class="head2">OUR INDUSTRY</h1>
+      </div>
+    </section>
+    <!-- Sidebar -->
+    <div id="mySidebar" class="sidebar">
+      <a href="#">HOME</a>
+      <a href="#">WHO WE ARE</a>
+      <a href="#">WHAT WE DO</a>
+      <a href="#">MEDIA CENTER</a>
+      <a href="#">LEAD WITH US</a>
+    </div>
+    <!-- end SideBar -->
+
+    <!-- Search Modal -->
+    <div
+      class="modal fade"
+      id="searchModal"
+      tabindex="-1"
+      aria-labelledby="searchModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="searchModalLabel">Search</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <input type="text" class="form-control" placeholder="Search..." />
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Search</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Font Awesome for icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

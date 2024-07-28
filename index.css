@@ -1,0 +1,254 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section.hero {
+  width: 100%;
+  height: 100vh;
+  background-image: url(/assets/Main\ banner\ image.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.navbar {
+  background-color: transparent;
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.nav-item {
+  padding: 0 10px; /* Reduced padding to make gaps smaller */
+}
+
+.nav-link {
+  color: white !important;
+}
+
+.nav-link:hover {
+  font-weight: bold;
+}
+
+.search-icon {
+  color: white;
+  cursor: pointer;
+}
+
+img.logo {
+  margin-left: 50px;
+}
+
+.dropdown-menu {
+  min-width: 100px;
+  text-align: center;
+}
+
+.invest-btn {
+  background-color: #08c2ed !important;
+  border-radius: 20px !important;
+  border: none !important;
+  color: white !important;
+  padding: 10px 40px !important;
+  margin-left: 10px !important;
+  font-weight: bold !important;
+}
+
+.navbar-brand {
+  margin-right: 20px; /* Added margin to move the logo to the right */
+}
+
+.navbar-brand img {
+  height: 40px;
+}
+
+.navHolder {
+  margin-top: 30px;
+}
+
+.sidebar {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  top: 0;
+  left: -250px;
+  background-color: #333;
+  color: white;
+  transition: 0.3s;
+  padding-top: 60px;
+  z-index: 1000;
+}
+
+.sidebar a {
+  padding: 15px 25px;
+  text-decoration: none;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  background-color: #575757;
+}
+
+.sidebar-btn {
+  font-size: 24px;
+  cursor: pointer;
+  color: white;
+}
+
+.sidebar-btn:hover {
+  color: #08c2ed !important;
+  text-decoration: none !important;
+}
+
+.sidebar-open {
+  left: 0;
+}
+
+.d-sm-none {
+  display: none !important;
+}
+/* Custom CSS for the modal */
+.modal-content {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.modal-header,
+.modal-footer {
+  border: none;
+}
+
+.modal-header .close {
+  outline: none;
+}
+
+.modal-body {
+  padding: 20px 0;
+}
+
+@media (max-width: 991.98px) {
+  .d-sm-none {
+    display: block !important;
+  }
+  .navbar-brand {
+    transform: translate(-20px, 0);
+  }
+
+  .search-icon {
+    color: white;
+    cursor: pointer;
+    transform: translate(-40px, 0);
+  }
+  .dropdown {
+    transform: translate(-40px, 0);
+  }
+  .invest-btn {
+    background-color: #08c2ed !important;
+    border-radius: 20px !important;
+    border: none !important;
+    color: white !important;
+    margin-left: 10px !important;
+    transform: translate(-40px, 0);
+  }
+
+  .sidebar-btn {
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+    transform: translate(-20px, 0);
+  }
+}
+.leftScrolImg {
+  width: 15px;
+  transform: translate(100px, 130px);
+}
+.leftScrol {
+  display: flex;
+}
+.leftScrolContent {
+  transform: translate(128px, 146px);
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+  cursor: pointer;
+}
+.leftScrolContent p {
+  color: white;
+}
+.bigTitleHero {
+  width: fit-content;
+  color: white;
+  transform: translate(600px, -140px);
+}
+
+.head1,
+.head2 {
+  font-size: 80px;
+  font-weight: bolder;
+}
+
+@media (max-width: 575.98px) {
+  .leftScrol {
+    display: flex;
+    transform: translate(-50px, 0);
+  }
+  .bigTitleHero {
+    width: fit-content;
+
+    color: white;
+    transform: translate(250px, -80px);
+  }
+  .head1,
+  .head2 {
+    font-size: 34px;
+    font-weight: bolder;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .bigTitleHero {
+    width: fit-content;
+    color: white;
+    transform: translate(250px, -130px);
+  }
+  .head1,
+  .head2 {
+    font-size: 50px;
+    font-weight: bold;
+  }
+  .leftScrol {
+    display: flex;
+    transform: translate(-50px, 0);
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .bigTitleHero {
+    width: fit-content;
+    color: white;
+    transform: translate(400px, -200px);
+  }
+  .head1,
+  .head2 {
+    font-size: 60px;
+    font-weight: bold;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .bigTitleHero {
+    width: fit-content;
+    color: white;
+    transform: translate(400px, -200px);
+  }
+  .head1,
+  .head2 {
+    font-size: 60px;
+    font-weight: bold;
+  }
+}
