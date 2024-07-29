@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="index.css" />
-    <title>Bootstrap Navbar Example</title>
+    <title>RIVIVA</title>
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
       rel="stylesheet"
@@ -47,7 +47,7 @@
           <div class="d-flex align-items-center">
             <div
               id="search-icon"
-              class="search-icon mx-2"
+              class="search-icon mx-2 ll"
               data-toggle="modal"
               data-target="#searchModal"
             >
@@ -66,9 +66,11 @@
                 ع
               </a>
               <div class="dropdown-menu" aria-labelledby="languageDropdown">
-                <a class="dropdown-item" href="#">EN</a>
+                <a class="dropdown-item" href="#" data-lang="en">EN</a>
+                <a class="dropdown-item" href="#" data-lang="ar">ع</a>
               </div>
             </div>
+
             <button class="btn invest-btn">Invest Now</button>
             <!-- Sidebar toggle button visible only on small and medium devices -->
             <div class="sidebar-btn mx-2 d-lg-none" onclick="toggleSidebar()">
@@ -78,29 +80,36 @@
         </div>
       </nav>
       <!-- left Scroll Start -->
-      <div class="leftScrol">
-        <img src="/assets/Left scroll action.png" alt="" class="leftScrolImg" />
-        <div class="leftScrolContent">
-          <p>Who We are</p>
-          <p>Our Roots</p>
-          <p>Vision and Mission</p>
-          <p>Values</p>
-          <p>Saudi Vision 2030</p>
-          <p>Goals</p>
-          <p>Board of Managers</p>
-          <p>IWMC</p>
+      <div class="contertHandler">
+        <div class="leftScrol">
+          <img
+            src="/assets/Left scroll action.png"
+            alt=""
+            class="leftScrolImg"
+          />
+          <div class="leftScrolContent">
+            <p>Who We are</p>
+            <p>Our Roots</p>
+            <p>Vision and Mission</p>
+            <p>Values</p>
+            <p>Saudi Vision 2030</p>
+            <p>Goals</p>
+            <p>Board of Managers</p>
+            <p>IWMC</p>
+          </div>
         </div>
-      </div>
-      <!-- left Scroll Finish -->
+        <!-- left Scroll Finish -->
 
-      <!-- heading Title start -->
-      <div class="bigTitleHero">
-        <h1 class="head1">REVIVING</h1>
-        <h1 class="head2">OUR INDUSTRY</h1>
+        <!-- heading Title start -->
+        <div class="bigTitleHero">
+          <h1 class="head1">REVIVING</h1>
+          <h1 class="head2">OUR INDUSTRY</h1>
+        </div>
       </div>
     </section>
     <!-- Sidebar -->
-    <div id="mySidebar" class="sidebar">
+    <div id="mySidebar" class="sidebar ltr">
+      <!-- Change to class="sidebar rtl" for RTL -->
       <a href="#">HOME</a>
       <a href="#">WHO WE ARE</a>
       <a href="#">WHAT WE DO</a>

@@ -48,6 +48,64 @@ img.logo {
   min-width: 100px;
   text-align: center;
 }
+[dir="rtl"] .dropdown-menu {
+  text-align: center;
+}
+
+[dir="rtl"] .leftScrol {
+  display: flex;
+  transform: translate(-200px, 0);
+  width: fit-content;
+}
+[dir="rtl"] .bigTitleHero {
+  width: fit-content;
+  color: white;
+  transform: translate(-650px, -100px);
+}
+/* Sidebar */
+.sidebar {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  top: 0;
+  background-color: #333;
+  color: white;
+  transition: 0.3s;
+  padding-top: 60px;
+  z-index: 1000;
+}
+
+/* LTR - Default Sidebar (slides from the left) */
+.sidebar.ltr {
+  left: -250px; /* Start from the left edge */
+}
+
+.sidebar.ltr.sidebar-open {
+  left: 0; /* Slide in from the left */
+}
+
+/* RTL - Sidebar (slides from the right) */
+.sidebar.rtl {
+  right: -250px; /* Start from the right edge */
+}
+
+.sidebar.rtl.sidebar-open {
+  right: 0; /* Slide in from the right */
+}
+
+[dir="rtl"] .leftScrolContent {
+  transform: translate(60px, 146px);
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+  cursor: pointer;
+}
+[dir="rtl"] .head1,
+.head2 {
+  font-size: 80px;
+  font-weight: bolder;
+  width: fit-content;
+}
 
 .invest-btn {
   background-color: #08c2ed !important;
@@ -70,7 +128,164 @@ img.logo {
 .navHolder {
   margin-top: 30px;
 }
+@media (max-width: 575.98px) {
+  [dir="rtl"] .leftScrol {
+    display: flex;
+    transform: translate(-130px, 0) !important;
+  }
 
+  [dir="rtl"] .bigTitleHero {
+    width: fit-content;
+    color: white;
+    transform: translate(-250px, -80px) !important;
+  }
+
+  [dir="rtl"] .head1,
+  [dir="rtl"] .head2 {
+    font-size: 34px !important;
+    font-weight: bolder !important;
+    width: fit-content !important;
+  }
+  [dir="rtl"] .search-icon {
+    color: white;
+    cursor: pointer;
+    transform: translate(15px, 0);
+  }
+  [dir="rtl"] .dropdown {
+    transform: translate(15px, 0);
+  }
+  [dir="rtl"] .invest-btn {
+    background-color: #08c2ed !important;
+    border-radius: 20px !important;
+    border: none !important;
+    color: white !important;
+    margin-left: 10px !important;
+    transform: translate(15px, 0);
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  [dir="rtl"] .leftScrol {
+    display: flex;
+    transform: translate(-200px, 0) !important;
+  }
+
+  [dir="rtl"] .bigTitleHero {
+    width: fit-content;
+    color: white;
+    transform: translate(-370px, -80px) !important;
+  }
+
+  [dir="rtl"] .head1,
+  [dir="rtl"] .head2 {
+    font-size: 50px !important;
+    font-weight: bolder !important;
+    width: fit-content !important;
+  }
+  [dir="rtl"] .search-icon {
+    color: white;
+    cursor: pointer;
+    transform: translate(15px, 0);
+  }
+  [dir="rtl"] .dropdown {
+    transform: translate(15px, 0);
+  }
+  [dir="rtl"] .invest-btn {
+    background-color: #08c2ed !important;
+    border-radius: 20px !important;
+    border: none !important;
+    color: white !important;
+    margin-left: 10px !important;
+    transform: translate(15px, 0);
+  }
+}
+@media (min-width: 700px) and (max-width: 991.98px) {
+  [dir="rtl"] .leftScrol {
+    display: flex;
+    transform: translate(-170px, 0) !important;
+  }
+
+  [dir="rtl"] .bigTitleHero {
+    width: fit-content;
+    color: white;
+    transform: translate(-400px, -80px) !important;
+  }
+
+  [dir="rtl"] .head1,
+  [dir="rtl"] .head2 {
+    font-size: 50px !important;
+    font-weight: bolder !important;
+    width: fit-content !important;
+  }
+  [dir="rtl"] .search-icon {
+    color: white;
+    cursor: pointer;
+    transform: translate(200px, 0);
+  }
+  [dir="rtl"] .dropdown {
+    transform: translate(200px, 0);
+  }
+  [dir="rtl"] .sidebar-btn {
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+    transform: translate(50px, 0);
+  }
+  [dir="rtl"] .invest-btn {
+    background-color: #08c2ed !important;
+    border-radius: 20px !important;
+    border: none !important;
+    color: white !important;
+    margin-left: 10px !important;
+    transform: translate(150px, 0);
+  }
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  [dir="rtl"] .leftScrol {
+    display: flex;
+    transform: translate(-200px, 0) !important;
+  }
+
+  [dir="rtl"] .bigTitleHero {
+    width: fit-content;
+    color: white;
+    transform: translate(-600px, -80px) !important;
+  }
+
+  [dir="rtl"] .head1,
+  [dir="rtl"] .head2 {
+    font-size: 50px !important;
+    font-weight: bolder !important;
+    width: fit-content !important;
+  }
+  [dir="rtl"] .search-icon {
+    color: white;
+    cursor: pointer;
+    transform: translate(15px, 0);
+  }
+  [dir="rtl"] .dropdown {
+    transform: translate(15px, 0);
+  }
+  [dir="rtl"] .invest-btn {
+    background-color: #08c2ed !important;
+    border-radius: 20px !important;
+    border: none !important;
+    color: white !important;
+    margin-left: 10px !important;
+    transform: translate(15px, 0);
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  [dir="ltr"].bigTitleHero {
+    width: fit-content;
+    color: white;
+    transform: translate(400px, -200px);
+  }
+  [dir="ltr"] .head1,
+  .head2 {
+    font-size: 60px;
+    font-weight: bold;
+  }
+}
 .sidebar {
   height: 100%;
   width: 250px;
@@ -135,22 +350,22 @@ img.logo {
 }
 
 @media (max-width: 991.98px) {
-  .d-sm-none {
+  [dir="ltr"] .d-sm-none {
     display: block !important;
   }
-  .navbar-brand {
+  [dir="ltr"] .navbar-brand {
     transform: translate(-20px, 0);
   }
 
-  .search-icon {
+  [dir="ltr"] .search-icon {
     color: white;
     cursor: pointer;
     transform: translate(-40px, 0);
   }
-  .dropdown {
+  [dir="ltr"] .dropdown {
     transform: translate(-40px, 0);
   }
-  .invest-btn {
+  [dir="ltr"] .invest-btn {
     background-color: #08c2ed !important;
     border-radius: 20px !important;
     border: none !important;
@@ -159,7 +374,7 @@ img.logo {
     transform: translate(-40px, 0);
   }
 
-  .sidebar-btn {
+  [dir="ltr"] .sidebar-btn {
     font-size: 24px;
     cursor: pointer;
     color: white;
@@ -196,58 +411,101 @@ img.logo {
 }
 
 @media (max-width: 575.98px) {
-  .leftScrol {
+  /* Adjust navbar for LTR */
+  [dir="ltr"] nav {
+    transform: translate(0, -50px);
+  }
+  [dir="ltr"] .search-icon {
+    color: white;
+    cursor: pointer;
+    transform: translate(180px, 0) !important;
+  }
+  [dir="ltr"] .dropdown {
+    transform: translate(180px, 0) !important;
+    z-index: 1;
+    cursor: pointer;
+  }
+  [dir="ltr"] .invest-btn {
+    background-color: #08c2ed !important;
+    border-radius: 20px !important;
+    border: none !important;
+    color: white !important;
+    padding: 10px 40px !important;
+    margin-left: 10px !important;
+    font-weight: bold !important;
+    transform: translate(-120px, 0);
+  }
+  /* Adjust navbar brand for LTR */
+  [dir="ltr"] .navbar-brand {
+    transform: translate(220px, 39px);
+  }
+
+  /* Adjust sidebar button for LTR */
+  [dir="ltr"] .sidebar-btn {
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+    transform: translate(100px, 0);
+  }
+
+  /* Adjust left scroll section for LTR */
+  [dir="ltr"] .leftScrol {
     display: flex;
     transform: translate(-50px, 0);
   }
-  .bigTitleHero {
-    width: fit-content;
 
+  /* Adjust big title hero for LTR */
+  [dir="ltr"] .bigTitleHero {
+    width: fit-content;
     color: white;
-    transform: translate(250px, -80px);
+    transform: translate(230px, -80px);
   }
-  .head1,
-  .head2 {
-    font-size: 34px;
+
+  /* Adjust headings for LTR */
+  [dir="ltr"] .head1,
+  [dir="ltr"] .head2 {
+    /* Fixed selector */
+    font-size: 34px !important;
     font-weight: bolder;
   }
 }
+
 @media (min-width: 576px) and (max-width: 767.98px) {
-  .bigTitleHero {
+  [dir="ltr"] .bigTitleHero {
     width: fit-content;
     color: white;
     transform: translate(250px, -130px);
   }
-  .head1,
-  .head2 {
+  [dir="ltr"] .head1,
+  [dir="ltr"] .head2 {
     font-size: 50px;
     font-weight: bold;
   }
-  .leftScrol {
+  [dir="ltr"] .leftScrol {
     display: flex;
     transform: translate(-50px, 0);
   }
 }
 @media (min-width: 768px) and (max-width: 991.98px) {
-  .bigTitleHero {
+  [dir="ltr"] .bigTitleHero {
     width: fit-content;
     color: white;
     transform: translate(400px, -200px);
   }
-  .head1,
-  .head2 {
+  [dir="ltr"] .head1,
+  [dir="ltr"] .head2 {
     font-size: 60px;
     font-weight: bold;
   }
 }
 @media (min-width: 992px) and (max-width: 1199.98px) {
-  .bigTitleHero {
+  [dir="ltr"] .bigTitleHero {
     width: fit-content;
     color: white;
     transform: translate(400px, -200px);
   }
-  .head1,
-  .head2 {
+  [dir="ltr"] .head1,
+  [dir="ltr"] .head2 {
     font-size: 60px;
     font-weight: bold;
   }
